@@ -12,6 +12,6 @@ def app(request):
 
 
 def test_create_contact_without_group_relation(app):
-        app.login(username="admin", password="secret")
+        app.session.login(username="admin", password="secret")
         app.create_contact(Contact(firstname="Normann", lastname="McDorm", address="San Diego, Local str, 5", home="+2343242342434", email="1@none.st"))
-        app.logout()
+        app.session.logout()
