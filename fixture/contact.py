@@ -42,6 +42,7 @@ class ContactHelper:
         # submit deletion
         wd.switch_to.alert.accept()
 
+
     def amend_first_contact(self, contact):
         wd = self.app.wd
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
