@@ -5,10 +5,12 @@ class ContactHelper:
     def __init__(self, app):
         self.app = app
 
+
     def return_to_home_page(self):
         wd = self.app.wd
         # return to home page
         wd.find_element_by_link_text("home page").click()
+
 
     def create(self, contact):
         wd = self.app.wd
@@ -32,6 +34,7 @@ class ContactHelper:
         wd.find_element_by_name("email").send_keys(contact.email)
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
         self.return_to_home_page()
+
 
     def delete_first_contact(self):
         wd = self.app.wd
@@ -58,3 +61,9 @@ class ContactHelper:
         # submit amendments
         wd.find_element_by_name("update").click()
         self.return_to_home_page()
+
+
+    def open_home_page(self):
+        wd = self.app.wd
+        # open home page
+        wd.find_element_by_link_text("home page").click()
