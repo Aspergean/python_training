@@ -163,9 +163,8 @@ class ContactHelper:
     def get_contact_from_view_page(self, index):
         wd = self.app.wd
         self.open_contact_view_by_index(index)
-        text = wd.find_element_by_id ("content").text
-        home_phone = re.search("H: (.*)", text).group(1)
-        work_phone = re.search("M: (.*)", text).group(1)
-        mobile_phone = re.search("W: (.*)", text).group(1)
-        phone2 = re.search("P: (.*)", text).group(1)
-        return Contact(home_phone=home_phone, mobile_phone=work_phone, work_phone=mobile_phone, phone2=phone2)
+        text = wd.find_element_by_id("content").text
+        print(text)
+        all_phones = '\n'.join(
+            [''.join(t) for t in re.findall('H: (.*)|W: (.*)|M: (.*)|P: (.*)', text)])
+        return Contact(all_phones=all_phones)
