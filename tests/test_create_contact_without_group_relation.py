@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 from model.contact import Contact
-import pytest
 
 
-@pytest.mark.parametrize("contact", testdata, ids=[repr(x) for x in testdata])
-def test_create_contact_without_group_relation(app, contact):
+def test_create_contact_without_group_relation(app, json_contacts):
+        contact = json_contacts
         old_contacts = app.contact.get_contact_list()
 #        contact = Contact(firstname="Normann", middlename="Mid", lastname="McDorm", nickname="Actor",
 #                         title="StupidPlace", company="ixtrail_serenity", address="San Diego, Local str, 5",
