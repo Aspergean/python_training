@@ -1,4 +1,5 @@
 from fixture.application import Application
+from fixture.session import SessionHelper
 import pytest
 import json
 import os.path
@@ -30,6 +31,7 @@ def stop(request):
         fixture.session.ensure_logout()
         fixture.destroy()
     request.addfinalizer(fin)
+    return fixture
 
 
 def pytest_addoption(parser):
