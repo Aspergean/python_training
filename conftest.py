@@ -39,6 +39,7 @@ def db(request):
     request.addfinalizer(fin)
     return dbfixture
 
+
 @pytest.fixture
 def check_ui(request):
     return request.config.getoption("--check_ui")

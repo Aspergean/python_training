@@ -200,3 +200,19 @@ class ContactHelper:
         all_phones = '\n'.join(
             [''.join(t) for t in re.findall('H: (.*)|W: (.*)|M: (.*)|P: (.*)', text)])
         return Contact(all_phones=all_phones)
+
+    def add_contact_to_group(self, contact_id, group):
+        wd = self.app.wd
+        self.select_contact_by_id(contact_id)
+        Select(wd.find_element_by_name("to_group")).select_by_value(group.id)
+        wd.find_element_by_name("add").click()
+        self.return_to_home_page()
+        self.cache = None
+
+    def remove_contact_from_group(self, contact_id, group):
+        wd = self.app.wd
+        Select(wd.find_element_by_name("group")).select_by_value(group.id)
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_name("remove").click()
+        self.return_to_home_page()
+        self.cache = None
