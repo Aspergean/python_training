@@ -38,12 +38,18 @@ class Contact:
         self.all_phones = all_phones
 
     def __repr__(self):
-        return "%s:%s;%s" % (self.id, self.lastname, self.firstname)
+        return "%s, %s, %s, %s, %s, %s" % (self.id, self.firstname, self.lastname, self.address,
+                                            self.all_phones_from_home_page, self.all_emails_from_home_page)
 
     def __eq__(self, other):
         return (self.id is None or other.id is None or self.id == other.id) and \
+               (self.firstname is None or other.firstname is None or self.firstname == other.firstname) and \
                (self.lastname is None or other.lastname is None or self.lastname == other.lastname) and \
-               (self.firstname is None or other.firstname is None or self.firstname == other.firstname)
+               (self.address is None or other.address is None or self.address == other.address) and \
+               (self.all_phones_from_home_page is None or other.all_phones_from_home_page is None
+                or self.all_phones_from_home_page == other.all_phones_from_home_page) and \
+               (self.all_emails_from_home_page is None or other.all_emails_from_home_page is None
+                or self.all_emails_from_home_page == other.all_emails_from_home_page)
 
     def id_or_max(self):
         if self.id:

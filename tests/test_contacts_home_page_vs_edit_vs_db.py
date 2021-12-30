@@ -2,6 +2,13 @@ import re
 from model.contact import Contact
 from random import randrange
 
+
+def test_contacts_info_ui_vs_db(app, db):
+    home_contacts_list = app.contact.get_contact_list()
+    db_contact_list = db.get_contact_list()
+    db_contacts_clean = map(clean, db_contact_list)
+    assert sorted(home_contacts_list, key=Contact.id_or_max) == sorted(db_contacts_clean, key=Contact.id_or_max)
+
 def test_contact_info_on_home_page(app):
     home_contacts_list = app.contact.get_contact_list()
     index = randrange(len(home_contacts_list))
@@ -43,4 +50,16 @@ def merge_emails_like_on_home_page(contact):
     return "\n".join(
         filter(lambda x: x != '',
                filter(lambda x: x is not None, [contact.email,  contact.email2, contact.email3])))
+
+
+def clean(contact):
+    firstname = ' '.join(contact.firstname.split())
+    lastname = ' '.join(contact.lastname.split())
+    address = contact.address
+    all_phones_from_home_page = merge_phones_like_on_home_page(contact)
+    all_emails_from_home_page = merge_emails_like_on_home_page(contact)
+    print(firstname, lastname, address, all_phones_from_home_page, all_emails_from_home_page)
+    return Contact(id=contact.id, firstname=firstname, lastname=lastname, address=address,
+                   all_phones_from_home_page=all_phones_from_home_page, all_emails_from_home_page=all_emails_from_home_page)
+
 
