@@ -17,12 +17,8 @@ def test_amend_first_contact_firstname(app, db, check_ui, json_contacts):
     assert old_contacts == new_contacts
     # need to clean the results from db as " " fails the test when compare with UI
     if check_ui:
-        def clean(cont):
-            return Contact(id=cont.id, firstname=' '.join(cont.firstname.split()),
-                           lastname=' '.join(cont.lastname.split()))
-
         ui_contacts = app.contact.get_contact_list()
-        new_contacts_clean = map(clean, new_contacts)
+        new_contacts_clean = map(app.contact.clean, new_contacts)
         assert sorted(new_contacts_clean, key=Contact.id_or_max) == sorted(ui_contacts, key=Contact.id_or_max)
         print("UI was checked")
 
