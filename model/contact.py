@@ -7,7 +7,7 @@ class Contact:
                  address=None, home_phone=None, mobile_phone=None, work_phone=None, fax=None, email=None, email2=None,
                  email3=None, homepage=None, birth_day=None, birth_month=None, birth_year=None, aniv_day=None,
                  aniv_month=None, aniv_year=None, address2=None, phone2=None, notes=None,
-                 all_phones_from_home_page=None, all_emails_from_home_page=None, all_phones=None):
+                 all_in_all_phones=None, all_in_all_emails=None, all_phones=None):
         self.id = id
         self.firstname = firstname
         self.middlename = middlename
@@ -33,23 +33,23 @@ class Contact:
         self.address2 = address2
         self.phone2 = phone2
         self.notes = notes
-        self.all_phones_from_home_page = all_phones_from_home_page
-        self.all_emails_from_home_page = all_emails_from_home_page
+        self.all_in_all_phones = all_in_all_phones
+        self.all_in_all_emails = all_in_all_emails
         self.all_phones = all_phones
 
     def __repr__(self):
         return "%s, %s, %s, %s, %s, %s" % (self.id, self.firstname, self.lastname, self.address,
-                                            self.all_phones_from_home_page, self.all_emails_from_home_page)
+                                           self.all_in_all_phones, self.all_in_all_emails)
 
     def __eq__(self, other):
         return (self.id is None or other.id is None or self.id == other.id) and \
                (self.firstname is None or other.firstname is None or self.firstname == other.firstname) and \
                (self.lastname is None or other.lastname is None or self.lastname == other.lastname) and \
                (self.address is None or other.address is None or self.address == other.address) and \
-               (self.all_phones_from_home_page is None or other.all_phones_from_home_page is None
-                or self.all_phones_from_home_page == other.all_phones_from_home_page) and \
-               (self.all_emails_from_home_page is None or other.all_emails_from_home_page is None
-                or self.all_emails_from_home_page == other.all_emails_from_home_page)
+               (self.all_in_all_phones is None or other.all_in_all_phones is None
+                or self.all_in_all_phones == other.all_in_all_phones) and \
+               (self.all_in_all_emails is None or other.all_in_all_emails is None
+                or self.all_in_all_emails == other.all_in_all_emails)
 
     def id_or_max(self):
         if self.id:
