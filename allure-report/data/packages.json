@@ -1,0 +1,77 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "tests.test_create_group",
+    "children" : [ {
+      "name" : "test_add_group[None:;;]",
+      "uid" : "d243503e1d942ae8",
+      "parentUid" : "f37d74d79225101425a05bf871185b11",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642677646112,
+        "stop" : 1642677649277,
+        "duration" : 3165
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 2,
+      "retriesStatusChange" : false,
+      "parameters" : [ "None:;;" ]
+    }, {
+      "name" : "test_add_group[None:nameza R;headerY;footerw5]",
+      "uid" : "a33fa3beaefd72b5",
+      "parentUid" : "f37d74d79225101425a05bf871185b11",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642677649312,
+        "stop" : 1642677652378,
+        "duration" : 3066
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 2,
+      "retriesStatusChange" : false,
+      "parameters" : [ "None:nameza R;headerY;footerw5" ]
+    }, {
+      "name" : "test_add_group[None:name d;headerCn o CQj;footeraOk3oyQzz8NCY]",
+      "uid" : "a26bc137b6aa9735",
+      "parentUid" : "f37d74d79225101425a05bf871185b11",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642677652415,
+        "stop" : 1642677655504,
+        "duration" : 3089
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 2,
+      "retriesStatusChange" : false,
+      "parameters" : [ "None:name d;headerCn o CQj;footeraOk3oyQzz8NCY" ]
+    }, {
+      "name" : "test_add_group[None:nameEMfTpwoWR;header uF8C;footertG4igrHWQRdgaYT2]",
+      "uid" : "ffc965af7d2f06ba",
+      "parentUid" : "f37d74d79225101425a05bf871185b11",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642677655540,
+        "stop" : 1642677658608,
+        "duration" : 3068
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 2,
+      "retriesStatusChange" : false,
+      "parameters" : [ "None:nameEMfTpwoWR;header uF8C;footertG4igrHWQRdgaYT2" ]
+    } ],
+    "uid" : "tests.test_create_group"
+  } ]
+}
