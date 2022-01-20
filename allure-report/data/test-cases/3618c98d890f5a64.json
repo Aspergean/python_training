@@ -1,0 +1,156 @@
+{
+  "uid" : "3618c98d890f5a64",
+  "name" : "test_contacts_info_ui_vs_db",
+  "fullName" : "tests.test_contacts_home_page_vs_edit_vs_db#test_contacts_info_ui_vs_db",
+  "historyId" : "816250d741331d614b71b663c265e9ff",
+  "time" : {
+    "start" : 1642686277375,
+    "stop" : 1642686277570,
+    "duration" : 195
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert [73, firstnam...ry\\nlilu@rt.by] == [73, firstnam...me, , , , ...]\n  Right contains 35 more items, first extra item: 74, firstname, lastnamehV, addresseAYOqygOB6X4X qJ2d NTiBpAEBoqkjgXFys3, 09986291720\\n7898919080900\\n09\\n7464, 1@none.st\\nhyrray@test.ry\\nlilu@rt.by\n  Use -v to get the full diff",
+  "statusTrace" : "app = <fixture.application.Application object at 0x000001D7092CFD60>\ndb = <fixture.db.DbFixture object at 0x000001D709C9D760>\n\n    def test_contacts_info_ui_vs_db(app, db):\n        home_contacts_list = app.contact.get_contact_list()\n        db_contact_list = db.get_contact_list()\n        db_contacts_clean = map(clean, db_contact_list)\n>       assert sorted(home_contacts_list, key=Contact.id_or_max) == sorted(db_contacts_clean, key=Contact.id_or_max)\nE       assert [73, firstnam...ry\\nlilu@rt.by] == [73, firstnam...me, , , , ...]\nE         Right contains 35 more items, first extra item: 74, firstname, lastnamehV, addresseAYOqygOB6X4X qJ2d NTiBpAEBoqkjgXFys3, 09986291720\\n7898919080900\\n09\\n7464, 1@none.st\\nhyrray@test.ry\\nlilu@rt.by\nE         Use -v to get the full diff\n\ntests\\test_contacts_home_page_vs_edit_vs_db.py:10: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "stop",
+    "time" : {
+      "start" : 1642686263699,
+      "stop" : 1642686263699,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "db",
+    "time" : {
+      "start" : 1642686277319,
+      "stop" : 1642686277334,
+      "duration" : 15
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1642686277334,
+      "stop" : 1642686277375,
+      "duration" : 41
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert [73, firstnam...ry\\nlilu@rt.by] == [73, firstnam...me, , , , ...]\n  Right contains 35 more items, first extra item: 74, firstname, lastnamehV, addresseAYOqygOB6X4X qJ2d NTiBpAEBoqkjgXFys3, 09986291720\\n7898919080900\\n09\\n7464, 1@none.st\\nhyrray@test.ry\\nlilu@rt.by\n  Use -v to get the full diff",
+    "statusTrace" : "app = <fixture.application.Application object at 0x000001D7092CFD60>\ndb = <fixture.db.DbFixture object at 0x000001D709C9D760>\n\n    def test_contacts_info_ui_vs_db(app, db):\n        home_contacts_list = app.contact.get_contact_list()\n        db_contact_list = db.get_contact_list()\n        db_contacts_clean = map(clean, db_contact_list)\n>       assert sorted(home_contacts_list, key=Contact.id_or_max) == sorted(db_contacts_clean, key=Contact.id_or_max)\nE       assert [73, firstnam...ry\\nlilu@rt.by] == [73, firstnam...me, , , , ...]\nE         Right contains 35 more items, first extra item: 74, firstname, lastnamehV, addresseAYOqygOB6X4X qJ2d NTiBpAEBoqkjgXFys3, 09986291720\\n7898919080900\\n09\\n7464, 1@none.st\\nhyrray@test.ry\\nlilu@rt.by\nE         Use -v to get the full diff\n\ntests\\test_contacts_home_page_vs_edit_vs_db.py:10: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d09bd8a5bac9580f",
+      "name" : "stdout",
+      "source" : "d09bd8a5bac9580f.txt",
+      "type" : "text/plain",
+      "size" : 4264
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1642686342526,
+      "stop" : 1642686343181,
+      "duration" : 655
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1642686342526,
+      "stop" : 1642686342526,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_contacts_home_page_vs_edit_vs_db"
+  }, {
+    "name" : "host",
+    "value" : "nba-144-22"
+  }, {
+    "name" : "thread",
+    "value" : "23604-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_contacts_home_page_vs_edit_vs_db"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3618c98d890f5a64.json",
+  "parameterValues" : [ ]
+}

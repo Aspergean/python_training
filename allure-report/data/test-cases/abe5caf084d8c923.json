@@ -1,0 +1,108 @@
+{
+  "uid" : "abe5caf084d8c923",
+  "name" : "test_phones_on_home_page",
+  "fullName" : "tests.test_contacts_home_page_vs_edit_vs_db#test_phones_on_home_page",
+  "historyId" : "7c4e756985df3acf6ca0d39e796785e4",
+  "time" : {
+    "start" : 1642686278030,
+    "stop" : 1642686278516,
+    "duration" : 486
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '09986291720\\...900\\n09\\n7464' == '2383+\\n1551+...+2543+8\\n60+5'\n  - 2383+\n  - 1551+74\n  - 72+2543+8\n  - 60+5\n  + 09986291720\n  + 7898919080900\n  + 09...\n  \n  ...Full output truncated (2 lines hidden), use '-vv' to show",
+  "statusTrace" : "app = <fixture.application.Application object at 0x000001D7092CFD60>\n\n    def test_phones_on_home_page(app):\n        contact_from_home_page = app.contact.get_contact_list()[0]\n        contact_from_edit_page = app.contact.get_contact_info_from_edit_page(0)\n>       assert contact_from_home_page.all_in_all_phones == merge_phones_like_on_home_page(contact_from_edit_page)\nE       AssertionError: assert '09986291720\\...900\\n09\\n7464' == '2383+\\n1551+...+2543+8\\n60+5'\nE         - 2383+\nE         - 1551+74\nE         - 72+2543+8\nE         - 60+5\nE         + 09986291720\nE         + 7898919080900\nE         + 09...\nE         \nE         ...Full output truncated (2 lines hidden), use '-vv' to show\n\ntests\\test_contacts_home_page_vs_edit_vs_db.py:27: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "stop",
+    "time" : {
+      "start" : 1642686263699,
+      "stop" : 1642686263699,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1642686278010,
+      "stop" : 1642686278030,
+      "duration" : 20
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1642686342526,
+      "stop" : 1642686343181,
+      "duration" : 655
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_contacts_home_page_vs_edit_vs_db"
+  }, {
+    "name" : "host",
+    "value" : "nba-144-22"
+  }, {
+    "name" : "thread",
+    "value" : "23604-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_contacts_home_page_vs_edit_vs_db"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "abe5caf084d8c923.json",
+  "parameterValues" : [ ]
+}

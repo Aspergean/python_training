@@ -1,40 +1,210 @@
 [ {
-  "uid" : "a26bc137b6aa9735",
-  "name" : "test_add_group[None:name d;headerCn o CQj;footeraOk3oyQzz8NCY]",
+  "uid" : "340e79311be8363b",
+  "name" : "test_delete_contact_from_group",
   "time" : {
-    "start" : 1642677652415,
-    "stop" : 1642677655504,
-    "duration" : 3089
+    "start" : 1642686272878,
+    "stop" : 1642686277156,
+    "duration" : 4278
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3618c98d890f5a64",
+  "name" : "test_contacts_info_ui_vs_db",
+  "time" : {
+    "start" : 1642686277375,
+    "stop" : 1642686277570,
+    "duration" : 195
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a47f076109b4495",
+  "name" : "test_phones_on_contact_view_page",
+  "time" : {
+    "start" : 1642686278543,
+    "stop" : 1642686279365,
+    "duration" : 822
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ffc965af7d2f06ba",
-  "name" : "test_add_group[None:nameEMfTpwoWR;header uF8C;footertG4igrHWQRdgaYT2]",
+  "uid" : "c48584916a27537a",
+  "name" : "test_delete_some_group",
   "time" : {
-    "start" : 1642677655540,
-    "stop" : 1642677658608,
-    "duration" : 3068
+    "start" : 1642686311644,
+    "stop" : 1642686312111,
+    "duration" : 467
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a33fa3beaefd72b5",
-  "name" : "test_add_group[None:nameza R;headerY;footerw5]",
+  "uid" : "3e3563b4f4029bc3",
+  "name" : "test_amend_first_contact_firstname[None, firstnameyuTX6X6R63, lastnameoHdT7V k 60, addresssHv ksSYBRmHrl3sDPA83f0jEM4c9 vKn, None, None]",
   "time" : {
-    "start" : 1642677649312,
-    "stop" : 1642677652378,
-    "duration" : 3066
+    "start" : 1642686312140,
+    "stop" : 1642686319988,
+    "duration" : 7848
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d243503e1d942ae8",
+  "uid" : "d4c9146aad3fda25",
   "name" : "test_add_group[None:;;]",
   "time" : {
-    "start" : 1642677646112,
-    "stop" : 1642677649277,
-    "duration" : 3165
+    "start" : 1642686296770,
+    "stop" : 1642686299898,
+    "duration" : 3128
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f74950d27011415",
+  "name" : "test_add_group[None:nameza R;headerY;footerw5]",
+  "time" : {
+    "start" : 1642686299927,
+    "stop" : 1642686302987,
+    "duration" : 3060
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "abe5caf084d8c923",
+  "name" : "test_phones_on_home_page",
+  "time" : {
+    "start" : 1642686278030,
+    "stop" : 1642686278516,
+    "duration" : 486
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "2101525730116e44",
+  "name" : "test_modify_group_name[None:nameEMfTpwoWR;header uF8C;footertG4igrHWQRdgaYT2]",
+  "time" : {
+    "start" : 1642686339287,
+    "stop" : 1642686342522,
+    "duration" : 3235
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd8d83f743cd4819",
+  "name" : "test_add_group[None:nameEMfTpwoWR;header uF8C;footertG4igrHWQRdgaYT2]",
+  "time" : {
+    "start" : 1642686306081,
+    "stop" : 1642686309117,
+    "duration" : 3036
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa0a71645e7767b",
+  "name" : "test_contact_info_on_home_page",
+  "time" : {
+    "start" : 1642686277613,
+    "stop" : 1642686278007,
+    "duration" : 394
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e287964d2bbc309",
+  "name" : "test_amend_first_contact_firstname[None, firstname, lastnamehV, addresseAYOqygOB6X4X qJ2d NTiBpAEBoqkjgXFys3, None, None]",
+  "time" : {
+    "start" : 1642686320236,
+    "stop" : 1642686329025,
+    "duration" : 8789
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad39cbca81476c30",
+  "name" : "test_modify_group_name[None:;;]",
+  "time" : {
+    "start" : 1642686329281,
+    "stop" : 1642686332656,
+    "duration" : 3375
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a5dc71daa3c9a689",
+  "name" : "test_create_contact_without_group_relation[None, firstnameyuTX6X6R63, lastnameoHdT7V k 60, addresssHv ksSYBRmHrl3sDPA83f0jEM4c9 vKn, None, None]",
+  "time" : {
+    "start" : 1642686279403,
+    "stop" : 1642686287784,
+    "duration" : 8381
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c78a3a106fb81057",
+  "name" : "test_add_contact_to_group",
+  "time" : {
+    "start" : 1642686271763,
+    "stop" : 1642686272626,
+    "duration" : 863
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b260b17610a4ef5",
+  "name" : "test_add_group[None:name d;headerCn o CQj;footeraOk3oyQzz8NCY]",
+  "time" : {
+    "start" : 1642686303018,
+    "stop" : 1642686306053,
+    "duration" : 3035
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ee13d6032c1f73e",
+  "name" : "test_group_list",
+  "time" : {
+    "start" : 1642686309147,
+    "stop" : 1642686310263,
+    "duration" : 1116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f8e9b4a2230acd8b",
+  "name" : "test_modify_group_name[None:name d;headerCn o CQj;footeraOk3oyQzz8NCY]",
+  "time" : {
+    "start" : 1642686336038,
+    "stop" : 1642686339256,
+    "duration" : 3218
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc48e2923cfb16cc",
+  "name" : "test_create_contact_without_group_relation[None, firstname, lastnamehV, addresseAYOqygOB6X4X qJ2d NTiBpAEBoqkjgXFys3, None, None]",
+  "time" : {
+    "start" : 1642686288038,
+    "stop" : 1642686296502,
+    "duration" : 8464
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ea2b89966f4beab",
+  "name" : "test_delete_some_contact",
+  "time" : {
+    "start" : 1642686310287,
+    "stop" : 1642686311398,
+    "duration" : 1111
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4029711c32e83e6",
+  "name" : "test_modify_group_name[None:nameza R;headerY;footerw5]",
+  "time" : {
+    "start" : 1642686332690,
+    "stop" : 1642686336008,
+    "duration" : 3318
   },
   "status" : "passed",
   "severity" : "normal"

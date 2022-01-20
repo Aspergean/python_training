@@ -1,5 +1,76 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: [name=\"remove\"]\nStacktrace:\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:183:5\nNoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:395:5\nelement.find/</<@chrome://remote/content/marionette/element.js:300:16",
+      "children" : [ {
+        "name" : "test_delete_contact_from_group",
+        "uid" : "340e79311be8363b",
+        "parentUid" : "756d5a8d85433e71ffd395cde29e31b4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642686272878,
+          "stop" : 1642686277156,
+          "duration" : 4278
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "756d5a8d85433e71ffd395cde29e31b4"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert [73, firstnam...ry\\nlilu@rt.by] == [73, firstnam...me, , , , ...]\n  Right contains 35 more items, first extra item: 74, firstname, lastnamehV, addresseAYOqygOB6X4X qJ2d NTiBpAEBoqkjgXFys3, 09986291720\\n7898919080900\\n09\\n7464, 1@none.st\\nhyrray@test.ry\\nlilu@rt.by\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "test_contacts_info_ui_vs_db",
+        "uid" : "3618c98d890f5a64",
+        "parentUid" : "f55f40ea6ae7f349dd9b0a175319e27c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642686277375,
+          "stop" : 1642686277570,
+          "duration" : 195
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f55f40ea6ae7f349dd9b0a175319e27c"
+    }, {
+      "name" : "AssertionError: assert '09986291720\\...900\\n09\\n7464' == '2383+\\n1551+...+2543+8\\n60+5'\n  - 2383+\n  - 1551+74\n  - 72+2543+8\n  - 60+5\n  + 09986291720\n  + 7898919080900\n  + 09...\n  \n  ...Full output truncated (2 lines hidden), use '-vv' to show",
+      "children" : [ {
+        "name" : "test_phones_on_home_page",
+        "uid" : "abe5caf084d8c923",
+        "parentUid" : "27a674983efd3d16db6ab20b99add02f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642686278030,
+          "stop" : 1642686278516,
+          "duration" : 486
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "27a674983efd3d16db6ab20b99add02f"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
 }
